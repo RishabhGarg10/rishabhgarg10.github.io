@@ -11,15 +11,15 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: #0f172a;
-      color: #e5e7eb;
+      background: #eaf2ff;
+      color: #1f2937;
       line-height: 1.6;
     }
 
     /* ---------- HERO ---------- */
     #hero {
       min-height: 100vh;
-      background: linear-gradient(135deg, #0f172a, #1e293b);
+      background: linear-gradient(135deg, #eaf2ff, #dbeafe);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -34,29 +34,26 @@
     .hero-content h1 {
       font-size: 40px;
       margin-bottom: 5px;
+      color: #0f172a;
     }
 
     .hero-content h2 {
       font-size: 26px;
       margin-bottom: 18px;
-      color: #93c5fd;
+      color: #2563eb;
     }
 
     .hero-content p {
       font-size: 17px;
       margin-bottom: 22px;
-      color: #cbd5f5;
+      color: #334155;
     }
 
     .social-links a {
       margin: 0 10px;
       font-size: 22px;
-      color: #cbd5f5;
+      color: #2563eb;
       text-decoration: none;
-    }
-
-    .social-links a:hover {
-      color: #93c5fd;
     }
 
     .nav-links {
@@ -65,20 +62,20 @@
 
     .nav-links a {
       margin: 0 10px;
-      color: #e5e7eb;
+      color: #1f2937;
       text-decoration: none;
       font-weight: bold;
     }
 
     .nav-links a:hover {
-      color: #93c5fd;
+      color: #2563eb;
     }
 
     .btn {
       display: inline-block;
       margin-top: 22px;
-      background: #93c5fd;
-      color: #0f172a;
+      background: #2563eb;
+      color: #ffffff;
       padding: 10px 24px;
       border-radius: 28px;
       font-weight: bold;
@@ -87,30 +84,30 @@
 
     /* ---------- SECTIONS ---------- */
     .section-wrapper {
-      padding: 40px 20px;
+      padding: 28px 20px;
     }
 
     .section-box {
       max-width: 1000px;
       margin: auto;
-      background: #020617;
+      background: #f8fafc;
       padding: 25px;
       border-radius: 12px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
     }
 
     .section-box h2 {
       text-align: center;
       font-size: 26px;
       margin-bottom: 22px;
-      color: #93c5fd;
+      color: #2563eb;
     }
 
     /* ---------- PROJECTS ---------- */
     .project {
       margin-bottom: 30px;
       padding-bottom: 18px;
-      border-bottom: 1px solid #1e293b;
+      border-bottom: 1px solid #e2e8f0;
     }
 
     .project:last-child {
@@ -120,12 +117,12 @@
 
     .project h3 {
       margin-bottom: 8px;
-      color: #e5e7eb;
+      color: #0f172a;
     }
 
     .project ul {
       margin-left: 18px;
-      color: #cbd5f5;
+      color: #334155;
     }
 
     .project-links {
@@ -133,7 +130,7 @@
     }
 
     .project-links a {
-      color: #93c5fd;
+      color: #2563eb;
       font-weight: bold;
       text-decoration: none;
       margin: 0 4px;
@@ -142,19 +139,19 @@
     /* ---------- SKILLS ---------- */
     #skills ul {
       margin-left: 18px;
-      color: #cbd5f5;
+      color: #334155;
     }
 
     /* ---------- FOOTER ---------- */
     footer {
       margin-top: 40px;
-      background: #020617;
+      background: #dbeafe;
       text-align: center;
       padding: 30px 20px;
     }
 
     footer a {
-      color: #93c5fd;
+      color: #2563eb;
       font-weight: bold;
       text-decoration: none;
     }
@@ -163,7 +160,6 @@
 
 <body>
 
-<!-- ================= HERO ================= -->
 <section id="hero">
   <div class="hero-content">
     <h1>Rishabh Garg</h1>
@@ -193,7 +189,6 @@
   </div>
 </section>
 
-<!-- ================= ABOUT ================= -->
 <div class="section-wrapper" id="about">
   <div class="section-box">
     <h2>👤 About Me</h2>
@@ -204,7 +199,6 @@
   </div>
 </div>
 
-<!-- ================= PROJECTS ================= -->
 <div class="section-wrapper" id="projects">
   <div class="section-box">
     <h2>📊 Projects</h2>
@@ -250,7 +244,6 @@
   </div>
 </div>
 
-<!-- ================= SKILLS ================= -->
 <div class="section-wrapper" id="skills">
   <div class="section-box">
     <h2>🛠 Skills</h2>
@@ -264,14 +257,20 @@
   </div>
 </div>
 
-<!-- ================= CERTIFICATIONS ================= -->
 <div class="section-wrapper" id="certifications">
   <div class="section-box">
     <h2>📜 Certifications & Specializations</h2>
     <ul>
-      <li>
-        Google Data Analytics Professional Certificate –
-        <a href="#" target="_blank">View Certificate</a>
-      </li>
-      <li>
-        SQL for Dat
+      <li>Google Data Analytics Professional Certificate – <a href="#">View Certificate</a></li>
+      <li>SQL for Data Analysis (Coursera) – <a href="#">View Certificate</a></li>
+      <li>Power BI Data Analyst (Microsoft) – <a href="#">View Certificate</a></li>
+    </ul>
+  </div>
+</div>
+
+<footer id="contact">
+  <p>📬 Email: <a href="mailto:rishabh@example.com">rishabh@example.com</a></p>
+</footer>
+
+</body>
+</html>
