@@ -12,116 +12,102 @@
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <!-- ================= CSS ================= -->
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       line-height: 1.6;
       scroll-behavior: smooth;
-    }
-
-    .top-left {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      z-index: 100;
-    }
-
-    .name-skills h1 {
-      margin: 0;
-      font-size: 26px;
-    }
-
-    .name-skills .skills {
-      margin: 0;
-      font-size: 14px;
-      color: #4facfe;
-      font-weight: bold;
-    }
-
-    .social-links a {
-      margin-right: 10px;
-      font-size: 22px;
       color: #333;
-      text-decoration: none;
     }
 
-    .social-links a:hover {
-      color: #4facfe;
-    }
-
-    .nav-links {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .nav-links li {
-      margin-bottom: 5px;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-
-    .nav-links a:hover {
-      color: #4facfe;
-    }
-
+    /* ---------- HERO ---------- */
     #hero {
-      height: 85vh;
+      min-height: 100vh;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      color: white;
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
-      background: linear-gradient(to right, #4facfe, #00f2fe);
-      color: white;
-      padding: 20px;
+      padding: 40px 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 40px;
+      margin-bottom: 5px;
     }
 
     .hero-content h2 {
-      font-size: 34px;
-      margin-bottom: 10px;
+      font-size: 28px;
+      margin-bottom: 15px;
     }
 
     .hero-content p {
       font-size: 18px;
-      margin-bottom: 20px;
+      max-width: 800px;
+      margin: 0 auto 25px;
+    }
+
+    /* ---------- LINKS ---------- */
+    .social-links a {
+      margin: 0 10px;
+      font-size: 22px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      opacity: 0.8;
+    }
+
+    /* ---------- NAV ---------- */
+    .nav-links {
+      margin-top: 25px;
+    }
+
+    .nav-links a {
+      margin: 0 12px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
     }
 
     .btn {
-      text-decoration: none;
+      display: inline-block;
+      margin-top: 25px;
       background: white;
       color: #4facfe;
       padding: 12px 28px;
       border-radius: 25px;
       font-weight: bold;
+      text-decoration: none;
     }
 
+    /* ---------- SECTIONS ---------- */
     section {
-      padding: 60px 20px;
+      padding: 70px 20px;
       max-width: 950px;
       margin: auto;
     }
 
     section h2 {
       text-align: center;
-      margin-bottom: 30px;
       font-size: 28px;
+      margin-bottom: 35px;
     }
 
+    /* ---------- PROJECTS ---------- */
     .project {
-      margin-bottom: 50px;
+      margin-bottom: 55px;
     }
 
     .project h3 {
-      color: #333;
+      margin-bottom: 10px;
     }
 
     .project ul {
@@ -136,8 +122,9 @@
       text-decoration: none;
     }
 
+    /* ---------- FOOTER ---------- */
     footer {
-      background: #f0f0f0;
+      background: #f2f2f2;
       text-align: center;
       padding: 40px 20px;
     }
@@ -147,158 +134,106 @@
       font-weight: bold;
       text-decoration: none;
     }
-
-    @media (max-width: 768px) {
-      .top-left {
-        position: static;
-        padding: 20px;
-      }
-
-      #hero {
-        height: auto;
-        padding: 80px 20px;
-      }
-    }
   </style>
 </head>
 
 <body>
 
-<!-- ========== TOP LEFT ========== -->
-<div class="top-left">
-  <div class="name-skills">
-    <h1>Rishabh Garg</h1>
-    <p class="skills">Data Analyst | SQL • Python • Power BI • Machine Learning</p>
-  </div>
-
-  <div class="social-links">
-    <a href="https://github.com/rishabhgarg10" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-  </div>
-
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills-section">Skills</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</div>
-
-<!-- ========== HERO ========== -->
+<!-- ================= HERO ================= -->
 <section id="hero">
   <div class="hero-content">
+    <h1>Rishabh Garg</h1>
     <h2>Turning Data into Business Decisions</h2>
-    <p>SQL • Python • Power BI • Analytics • Machine Learning</p>
+
+    <p>
+      I am a Data Analyst with hands-on experience in SQL, Python, and Power BI.
+      I specialize in analyzing business data, building dashboards, and delivering
+      actionable insights that support data-driven decision-making.
+      Skilled in supervised and unsupervised machine learning for predictive analytics
+      and customer segmentation.
+    </p>
+
+    <div class="social-links">
+      <a href="https://github.com/rishabhgarg10" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+
     <a href="assets/Rishabh_Garg_Resume.pdf" class="btn" download>📄 Download Resume</a>
   </div>
 </section>
 
-<!-- ========== ABOUT ========== -->
+<!-- ================= ABOUT ================= -->
 <section id="about">
   <h2>About Me</h2>
   <p>
-    I am a Data Analyst with hands-on experience in SQL, Python, and Power BI.
-    I specialize in analyzing business data, building dashboards, and delivering
-    actionable insights that support data-driven decision-making.
-  </p>
-  <p>
-    I have worked on end-to-end analytics projects involving customer churn analysis,
-    sales performance tracking, pricing and review analytics, and time series analysis.
-  </p>
-  <p>
-    I am skilled in supervised and unsupervised machine learning techniques such as
-    regression, classification, and customer segmentation, applying predictive models
-    where they add measurable business value.
+    I have worked on end-to-end analytics projects including customer churn analysis,
+    e-commerce sales performance tracking, pricing analytics, and review sentiment analysis.
+    My focus is on translating complex data into clear, actionable business insights.
   </p>
 </section>
 
-<!-- ========== PROJECTS ========== -->
+<!-- ================= PROJECTS ================= -->
 <section id="projects">
   <h2>Projects</h2>
 
-  <!-- PROJECT 1 -->
   <div class="project">
-    <h3>⭐ Customer Churn Analysis – Telecom Domain</h3>
-    <p><strong>Business Problem:</strong> High customer churn reducing recurring revenue.</p>
-    <p><strong>Data:</strong> 7,000+ customer records including demographics, services, billing.</p>
-    <p><strong>Approach:</strong></p>
+    <h3>⭐ Customer Churn Analysis – Telecom</h3>
+    <p><strong>Problem:</strong> High customer churn impacting recurring revenue.</p>
     <ul>
-      <li>SQL for segmentation and KPI creation</li>
-      <li>Python for EDA and feature engineering</li>
-      <li>Supervised ML (Logistic Regression, Random Forest)</li>
-      <li>Power BI dashboard tracking 12 churn KPIs</li>
+      <li>Analyzed 7,000+ customer records using SQL & Python</li>
+      <li>Built supervised ML models (Logistic Regression, Random Forest)</li>
+      <li>Designed Power BI dashboard with churn KPIs</li>
     </ul>
-    <p><strong>Key Insights:</strong></p>
-    <ul>
-      <li>Month-to-month contracts showed the highest churn</li>
-      <li>High support ticket customers churned 2× faster</li>
-    </ul>
-    <p><strong>Business Impact:</strong> Simulated churn reduction of ~18% through targeted retention.</p>
-    <a href="https://github.com/rishabhgarg10" target="_blank">View on GitHub</a>
+    <p><strong>Impact:</strong> Identified churn drivers and simulated ~18% churn reduction.</p>
+    <a href="https://github.com/rishabhgarg10" target="_blank">View Project</a>
   </div>
 
-  <!-- PROJECT 2 -->
   <div class="project">
     <h3>E-Commerce Sales Performance Analysis</h3>
-    <p><strong>Business Problem:</strong> Limited visibility into revenue drivers and product performance.</p>
-    <p><strong>Data:</strong> Order-level sales data with products, categories, regions, and dates.</p>
-    <p><strong>Approach:</strong></p>
+    <p><strong>Problem:</strong> Lack of visibility into revenue and product performance.</p>
     <ul>
-      <li>SQL for data modeling and aggregation</li>
-      <li>Python for trend analysis and validation</li>
-      <li>Power BI dashboard tracking revenue, growth, and profitability KPIs</li>
+      <li>Built SQL models for sales aggregation</li>
+      <li>Identified top 20% products contributing ~65% revenue</li>
+      <li>Created interactive Power BI dashboards</li>
     </ul>
-    <p><strong>Key Insights:</strong></p>
-    <ul>
-      <li>Top 20% products generated ~65% of total revenue</li>
-      <li>Seasonal spikes significantly impacted monthly sales</li>
-    </ul>
-    <p><strong>Business Impact:</strong> Improved reporting efficiency by ~40% and enabled data-driven inventory planning (simulated).</p>
-    <a href="https://github.com/rishabhgarg10" target="_blank">View on GitHub</a>
+    <p><strong>Impact:</strong> Improved reporting efficiency and inventory planning.</p>
+    <a href="https://github.com/rishabhgarg10" target="_blank">View Project</a>
   </div>
 
-  <!-- PROJECT 3 -->
   <div class="project">
     <h3>Amazon Price & Review Analytics</h3>
-    <p><strong>Business Problem:</strong> Understanding how pricing and customer sentiment affect product performance.</p>
-    <p><strong>Data:</strong> Amazon product prices, ratings, and customer reviews.</p>
-    <p><strong>Approach:</strong></p>
+    <p><strong>Problem:</strong> Understanding impact of pricing and customer sentiment.</p>
     <ul>
-      <li>Python for data cleaning and sentiment analysis</li>
-      <li>Exploratory analysis of pricing trends vs ratings</li>
-      <li>Correlation analysis to identify sentiment impact</li>
+      <li>Performed sentiment analysis on reviews using Python</li>
+      <li>Analyzed price trends vs ratings</li>
+      <li>Used correlation analysis for insight discovery</li>
     </ul>
-    <p><strong>Key Insights:</strong></p>
-    <ul>
-      <li>Higher-rated products maintained more stable pricing</li>
-      <li>Negative sentiment strongly correlated with price drops</li>
-    </ul>
-    <p><strong>Business Impact:</strong> Supported data-driven pricing and product positioning decisions.</p>
-    <a href="https://github.com/rishabhgarg10" target="_blank">View on GitHub</a>
+    <p><strong>Impact:</strong> Supported data-driven pricing and product strategy.</p>
+    <a href="https://github.com/rishabhgarg10" target="_blank">View Project</a>
   </div>
 </section>
 
-<!-- ========== SKILLS ========== -->
-<section id="skills-section">
+<!-- ================= SKILLS ================= -->
+<section id="skills">
   <h2>Skills</h2>
 
-  <p><strong>Technical Skills</strong></p>
   <ul>
-    <li>SQL: Joins, CTEs, Window Functions, Subqueries</li>
-    <li>Python: Pandas, NumPy, Matplotlib, Scikit-learn</li>
-    <li>Power BI: DAX, Power Query, Dashboarding</li>
-  </ul>
-
-  <p><strong>Analytics & Machine Learning</strong></p>
-  <ul>
-    <li>Exploratory Data Analysis (EDA)</li>
-    <li>Supervised Learning (Regression, Classification)</li>
-    <li>Unsupervised Learning (Clustering, Segmentation)</li>
-    <li>Time Series Analysis</li>
+    <li><strong>SQL:</strong> Joins, CTEs, Window Functions</li>
+    <li><strong>Python:</strong> Pandas, NumPy, Matplotlib, Scikit-learn</li>
+    <li><strong>Power BI:</strong> DAX, Power Query, Dashboarding</li>
+    <li><strong>Analytics:</strong> EDA, Time Series Analysis</li>
+    <li><strong>Machine Learning:</strong> Supervised & Unsupervised Models</li>
   </ul>
 </section>
 
-<!-- ========== CONTACT ========== -->
+<!-- ================= CONTACT ================= -->
 <footer id="contact">
   <p>📧 Email: <a href="mailto:rishabh@example.com">rishabh@example.com</a></p>
 </footer>
