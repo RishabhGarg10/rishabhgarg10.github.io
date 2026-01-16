@@ -16,7 +16,6 @@
       line-height: 1.6;
     }
 
-    /* ---------- HERO ---------- */
     #hero {
       min-height: 50vh;
       background: linear-gradient(135deg, #eaf2ff, #dbeafe);
@@ -24,7 +23,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 20px 20px;
+      padding: 20px;
     }
 
     .hero-content {
@@ -82,7 +81,6 @@
       text-decoration: none;
     }
 
-    /* ---------- SECTIONS ---------- */
     .section-wrapper {
       padding: 28px 20px;
     }
@@ -103,46 +101,30 @@
       color: #2563eb;
     }
 
-    /* ---------- PROJECTS ---------- */
+    .experience-item,
     .project {
       margin-bottom: 30px;
       padding-bottom: 18px;
       border-bottom: 1px solid #e2e8f0;
     }
 
+    .experience-item:last-child,
     .project:last-child {
       border-bottom: none;
       margin-bottom: 0;
     }
 
+    .experience-item h3,
     .project h3 {
-      margin-bottom: 8px;
+      margin-bottom: 6px;
       color: #0f172a;
     }
 
-    .project ul {
+    ul {
       margin-left: 18px;
       color: #334155;
     }
 
-    .project-links {
-      margin-top: 8px;
-    }
-
-    .project-links a {
-      color: #2563eb;
-      font-weight: bold;
-      text-decoration: none;
-      margin: 0 4px;
-    }
-
-    /* ---------- SKILLS ---------- */
-    #skills ul {
-      margin-left: 18px;
-      color: #334155;
-    }
-
-    /* ---------- FOOTER ---------- */
     footer {
       margin-top: 40px;
       background: #dbeafe;
@@ -165,9 +147,7 @@
     <h1>Rishabh Garg</h1>
     <h2>Turning Data into Business Decisions</h2>
 
-    <p>
-      Data Analyst | Business Analyst
-    </p>
+    <p>Entry-level Data Analyst | Business Analytics</p>
 
     <div class="social-links">
       <a href="https://github.com/rishabhgarg10" target="_blank"><i class="fab fa-github"></i></a>
@@ -176,13 +156,14 @@
 
     <div class="nav-links">
       <a href="#about">About</a>
+      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
     </div>
 
-    <a href="https://drive.google.com/file/d/1RY17VCRBrvHrmofPWkYEqES9HTEVBJHg/view?usp=sharing" class="btn" download>📄 View Resume</a>
+    <a href="https://drive.google.com/file/d/1RY17VCRBrvHrmofPWkYEqES9HTEVBJHg/view?usp=sharing" class="btn">📄 View Resume</a>
   </div>
 </section>
 
@@ -190,12 +171,37 @@
   <div class="section-box">
     <h2>👤 About Me</h2>
     <p>
-      Analytically driven Computer Science professional with a strong foundation in data analysis, 
-      dashboarding, time series analysis, and customer analytics. Proficient in SQL, Python, and Power BI,
-      with hands-on exposure to machine learning modeling, basic agentic AI workflows, and computer vision 
-      techniques. Focused on transforming raw data into actionable, business-driven insights through
-      predictive analytics, automation, and data-backed decision support.
+      Entry-level Data Analyst with a Computer Science background and hands-on experience in SQL, Python,
+      Excel, and Power BI. Focused on data cleaning, KPI reporting, and business analytics, with a strong
+      interest in turning raw data into actionable insights.
     </p>
+  </div>
+</div>
+
+<div class="section-wrapper" id="experience">
+  <div class="section-box">
+    <h2>💼 Experience</h2>
+
+    <div class="experience-item">
+      <h3>Data Analytics Trainee | Softech Infotech System Pvt. Ltd.</h3>
+      <p><em>July 2025 – December 2025</em></p>
+      <ul>
+        <li>Assisted in cleaning and validating datasets using Excel and SQL, contributing to an estimated 15–20% improvement in data accuracy.</li>
+        <li>Supported MIS and performance reporting by preparing structured data summaries.</li>
+        <li>Performed data quality checks to identify missing values, duplicates, and inconsistencies.</li>
+        <li>Coordinated with team members to ensure timely and accurate data delivery.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3>Research & Content Analyst | EatMyNews</h3>
+      <p><em>March 2025 – May 2025</em></p>
+      <ul>
+        <li>Conducted structured research and delivered 14 projects within defined timelines.</li>
+        <li>Improved professional vocabulary and writing clarity; achieved an A grade in the Pearson Versant Vocabulary Test.</li>
+        <li>Gained exposure to audience engagement strategies and effective information presentation.</li>
+      </ul>
+    </div>
   </div>
 </div>
 
@@ -204,48 +210,20 @@
     <h2>📊 Projects</h2>
 
     <div class="project">
-      <h3>⭐ Customer Churn Analysis – Telecom</h3>
+      <h3>Customer Churn Analysis – Telecom</h3>
       <ul>
-        <li>Analyzed 7,000+ customer records using SQL & Python</li>
-        <li>Built supervised ML models</li>
-        <li>Designed Power BI dashboard</li>
+        <li>Analyzed 7,000+ customer records using SQL and Python</li>
+        <li>Built Power BI dashboard for churn insights</li>
+        <li>Identified key churn drivers</li>
       </ul>
-      <p><strong>Impact:</strong> ~18% simulated churn reduction.</p>
-      <div class="project-links">
-        <a href="https://github.com/RishabhGarg10/Data-Analytics-Repo/blob/49590c7c4861100a5d83fa87b77df3b323d8ef0d/End-to-End%20Customer%20Churn%20Analytics%20with%20Statistical%20Validation/1).%20Notebook/End-to-End%20Customer%20Churn%20Analytics%20with%20Statistical%20Validation.ipynb">View Project</a> | 
-        <a href="https://drive.google.com/file/d/19B4NSvCQwshoZefHMNH2INtSmAqYve3Y/view?usp=sharing">Preview</a> | 
-        <a href="https://github.com/RishabhGarg10/Data-Analytics-Repo/raw/refs/heads/main/End-to-End%20Customer%20Churn%20Analytics%20with%20Statistical%20Validation/3).%20Power%20BI%20Dashboard/Customer%20Churn%20Analysis%20%E2%80%93%20Telecom.pbix">Download Power BI Dashboard</a>
-        </div>
     </div>
 
     <div class="project">
-      <h3>⭐ E-Commerce Sales Performance Analysis</h3>
+      <h3>E-Commerce Sales Performance Analysis</h3>
       <ul>
-        <li>Revenue & growth analysis using SQL</li>
         <li>Identified top 20% products contributing ~65% revenue</li>
-        <li>Power BI dashboards</li>
+        <li>Built interactive Power BI dashboards</li>
       </ul>
-      <p><strong>Impact:</strong> Improved reporting & planning.</p>
-      <div class="project-links">
-        <a href="https://github.com/RishabhGarg10/Data-Analytics-Repo/blob/49590c7c4861100a5d83fa87b77df3b323d8ef0d/E-Commerce%20Sales%20%26%20Customer%20Behvioral%20Analysis/E-Commerce%20Sales%20%26%20Customer%20Behvioral%20Analysis%20.ipynb">View Project</a> |
-        <a href="https://drive.google.com/file/d/1KKyADug01YXMU7N1zTi0No3GI6OaI42C/view?usp=sharing">Preview</a> |
-        <a href="https://github.com/RishabhGarg10/Data-Analytics-Repo/raw/refs/heads/main/E-Commerce%20Sales%20&%20Customer%20Behvioral%20Analysis/E-Commerce%20Sales%20&%20Customer%20Behavioral%20Analysis.pbix">Download Power BI Dashboard</a>
-         </div>
-    </div>
-
-    <div class="project">
-      <h3>⭐ Amazon Price & Review Analytics</h3>
-      <ul>
-        <li>Sentiment analysis on reviews</li>
-        <li>Pricing vs rating correlation analysis</li>
-        <li>Insight-driven strategy support</li>
-      </ul>
-      <p><strong>Impact:</strong> Data-backed pricing decisions.</p>
-      <div class="project-links">
-        <a href="#">View Project</a> | 
-        <a href="#">Preview</a> | 
-        <a href="#">Download Power BI Dashboard</a>
-      </div>
     </div>
   </div>
 </div>
@@ -254,22 +232,20 @@
   <div class="section-box">
     <h2>🛠 Skills</h2>
     <ul>
-      <li>SQL (Joins, CTEs, Window Functions)</li>
-      <li>Python (Pandas, NumPy, Scikit-learn)</li>
+      <li>SQL, Python (Pandas, NumPy)</li>
+      <li>Excel (Pivot Tables, Lookups)</li>
       <li>Power BI (DAX, Power Query)</li>
-      <li>EDA, Time Series Analysis</li>
-      <li>Supervised & Unsupervised ML</li>
+      <li>EDA, KPI Reporting</li>
     </ul>
   </div>
 </div>
 
 <div class="section-wrapper" id="certifications">
   <div class="section-box">
-    <h2>📜 Certifications & Specializations</h2>
+    <h2>📜 Certifications</h2>
     <ul>
-      <li>IBM Data Science Professional Certificate – 12 Courses <a href="https://drive.google.com/file/d/1lXFVPGmQcl2wSE12L0FOU_2OlL0h7jKp/view?usp=sharing">View Certificate</a></li>
-      <li>Google Python Specialization (Coursera) – <a href="https://drive.google.com/file/d/1QTakc2QYD0c-ieE9xOVh0iwdU4Bsx8bG/view?usp=sharing">View Certificate</a></li>
-      <li>TEQIP-III RTU Data Science & Analytics – <a href="https://drive.google.com/file/d/11zYaN5UTUqBdCjHEGGUDa1YDdmjBv9Sm/view?usp=sharing">View Certificate</a></li>
+      <li>IBM Data Science Professional Certificate</li>
+      <li>Google Python Specialization</li>
     </ul>
   </div>
 </div>
